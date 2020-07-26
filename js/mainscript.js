@@ -23,6 +23,16 @@ $(function () {
     document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
+    ////////////// dropdown nav menu
+    $(".dropdown-toggle").hover(function(){
+      $(".dropdown-menu").toggleClass("show");
+      $(".dropdown").toggleClass("show");
+    });
+
+    $(".dropdown-menu").hover(function(){
+      $(this).toggleClass("show");
+    });
+
      /////////////// typewriter effect
     function tapeWriter() {
       if (i < message.length) {
