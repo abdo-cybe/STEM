@@ -52,6 +52,8 @@ a.navbar-brand .logo-subtitle {
     top: 97% !important;
 }
 
+.dropdown-item{padding: 0.7rem 2rem;}
+
 .navbar .dropdown-menu svg{margin-right: 5px;}
 
 /* start footer section */

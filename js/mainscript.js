@@ -23,10 +23,10 @@ $(function () {
     document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
-    ////////////// dropdown nav menu
+    //w//////////// dropdown nav menu
     $(".dropdown-toggle").hover(function(){
-      $(".dropdown-menu").toggleClass("show");
-      $(".dropdown").toggleClass("show");
+      $(this).siblings(".dropdown-menu").toggleClass("show");
+      $(this).parent().toggleClass("show");
     });
 
     $(".dropdown-menu").hover(function(){
@@ -44,7 +44,7 @@ $(function () {
       }
     }
    
-    var message = ' Welcome in october castle';
+    var message = ' Welcome in STEM october';
     var i = 0; 
     var interval = setInterval(tapeWriter, 80);
 
